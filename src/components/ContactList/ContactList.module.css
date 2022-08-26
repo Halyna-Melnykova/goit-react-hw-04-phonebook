@@ -1,0 +1,19 @@
+.contactList {
+  width: 300px;
+}
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.button {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: lightskyblue;
+}
