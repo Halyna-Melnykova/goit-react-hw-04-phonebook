@@ -25,7 +25,7 @@ const App = () => {
       name,
       number,
     };
-    setContacts(contacts => [newContact, ...contacts]);
+    setContacts([newContact, ...contacts]);
   };
 
   const changeFilter = event => {
@@ -34,9 +34,7 @@ const App = () => {
   };
 
   const deleteContact = contactId => {
-    setContacts(prevContacts =>
-      prevContacts.filter(contact => contact.id !== contactId)
-    );
+    setContacts(contacts.filter(contact => contact.id !== contactId));
   };
 
   const normalizedFilter = filter.toLowerCase();
